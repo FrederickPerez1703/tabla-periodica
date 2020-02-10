@@ -1,0 +1,103 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/estilo.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="main">
+        <h2 class="titulo">Tabla periodica</h2>
+        @for (int j = 0; j < 7; j++)
+        {
+
+
+            <div class="grupo1">@(((String[])ViewBag.grupo1)[j])</div>
+
+        }
+        @for (int i = 0; i < 6; i++)
+        {
+            <div class="grupo2"> @(((String[])ViewBag.grupo2)[i])</div>
+        }
+        @for (int p = 0; p < 4; p++)
+        {
+            <div class="grupo3">@(((String[])ViewBag.grupo3)[p])</div>
+
+        }
+        @for (int a = 0; a < 4; a++)
+        {
+            <div class="grupoA3">@(((String[])ViewBag.grupoA)[a])</div>
+        }
+        @for (int b = 0; b < 4; b++)
+        {
+            <div class="grupoB">@(((String[])ViewBag.grupoB)[b])</div>
+        }
+        @for (int w = 0; w < 4; w++)
+        {
+            <div class="grupoC">@(((String[])ViewBag.grupod)[w])</div>
+        }
+        @for (int s = 0; s < 4; s++)
+        {
+            <div class="grupoC1">@(((String[])ViewBag.grupoC)[s])</div>
+        }
+
+        @for (int v = 0; v < 4; v++)
+        {
+            <div class="grupoC2">@(((String[])ViewBag.grupoF)[v])</div>
+        }
+        @for (int q = 0; q < 4; q++)
+        {
+            <div class="grupoC3">@(((String[])ViewBag.vs)[q])</div>
+        }
+        @for (int t = 0; t < 4; t++)
+        {
+            <div class="grupoC4">@(((String[])ViewBag.vs1)[t])</div>
+        }
+        @for (int z = 0; z < 4; z++)
+        {
+            <div class="grupoC5">@(((String[])ViewBag.vs2)[z])</div>
+        }
+        @for (int n = 0; n < 6; n++)
+        {
+            <div class="grupoC6">@(((String[])ViewBag.vs3)[n])</div>
+        }
+        @for (int l = 0; l < 6; l++)
+        {
+            <div class="grupoC7">@(((String[])ViewBag.vs4)[l])</div>
+        }
+        @for (int c = 0; c < 6; c++)
+        {
+            <div class="grupoC8">@(((String[])ViewBag.vs5)[c])</div>
+        }
+        @for (int h = 0; h < 6; h++)
+        {
+            <div class="grupoC9">@(((String[])ViewBag.vs6)[h])</div>
+        }
+        @for (int k = 0; k < 6; k++)
+        {
+            <div class="grupoC10">@(((String[])ViewBag.vs7)[k])</div>
+        }
+        @for (int w = 0; w < 7; w++)
+        {
+            <div class="grupoC11">@(((String[])ViewBag.vs8)[w])</div>
+        }
+
+        @for (int e = 0; e < 14; e++)
+        {
+            <div class="extra1">@(((String[])ViewBag.Estra1)[e])</div>
+        }
+        @for (int x = 0; x < 14; x++)
+        {
+            <div class="extra2">@(((String[])ViewBag.Estra2)[x])</div>
+        }
+
+    </div>
+</body>
+</html>
